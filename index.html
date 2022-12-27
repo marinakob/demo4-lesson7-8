@@ -20,11 +20,15 @@
              <!-- *Navigation -->
             <ul class="header-list">
               <li class="header-item">
-               <a class="link-header" href="./index.html" title="Студія">Студія</a></li>
+               <a class="link-header" href="./index.html" title="Студія">Студія</a>
+              </li>
+              
               <li class="header-item">
-                <a class="link" href="./portfolio.html" title="Портфоліо">Портфоліо</a></li>
+              <a class="link" href="./portfolio.html" title="Портфоліо">Портфоліо</a>
+              </li>
               <li class="header-item">
-                <a class="link" href="#" title="Контакти">Контакти</a></li>
+                <a class="link" href="#" title="Контакти">Контакти</a>
+              </li>
             </ul>
           </nav>
               <!--Header Contacts -->
@@ -51,10 +55,9 @@
         <section class="hero  overlay">
           <div class="container">
             <h1 class=" hero-title"> Ефективні рішення для вашого бізнесу</h1>
-            <button type="button" class="button-hero">Замовити послугу</button>
+            <button  type="button" class="button-hero"data-modal-open>Замовити послугу</button>
           </div>  
         </section>
-        
         <!--advantage(перевага)-->
         <section class="section">
           <div class="container">
@@ -104,9 +107,24 @@
           <div class="container">
            <h2 class="work-title">Чим ми займаємося</h2> 
             <ul class="work-list">
-             <li class="work-descr"><img class="photo-work" src="./images/imga.jpeg" alt="набір схеми на комп" width="370"></li>
-             <li class="work-descr"><img class="photo-work" src="./images/imgb.jpeg" alt="набір з телефону" width="370"></li> 
-             <li class="work-descr"><img class="photo-work" src="./images/imgc.jpeg" alt="зображення на телефоні" width="370"></li> 
+             <li class="work-descr">
+              <div class="work-descr-box">
+               <img class="photo-work" src="./images/imga.jpeg" alt="набір схеми на комп" width="370">
+               <h3 class="nome-box desktop">Десктопні додатки</h3>
+              </div>
+            </li>
+             <li class="work-descr">
+              <div class="work-descr-box">
+              <img class="photo-work" src="./images/imgb.jpeg" alt="набір з телефону" width="370">
+              <h3 class="nome-box mobile">Мобільні додатки</h3>
+              </div>
+            </li> 
+             <li class="work-descr">
+              <div class="work-descr-box">
+                <img class="photo-work" src="./images/imgc.jpeg" alt="зображення на телефоні" width="370">
+                <h3 class="nome-box designer">Дизайнерські рішення</h3>
+              </div>
+            </li> 
             </ul>
           </div>
         </section>
@@ -369,7 +387,16 @@
           </div>
         </div>  
       </footer>
-  
-    
+       <!--модальное окно-->
+       <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+           <button type="button"class="modal-button" data-modal-close >
+            <svg class="modal-icon" width="18" height="18">
+              <use href="./images/symbol-defs.svg#icon-close-black"></use>
+            </svg>
+           </button>
+          </div>
+        </div> 
+      <script src="./js/modal.js"></script> 
   </body>
 </html>
